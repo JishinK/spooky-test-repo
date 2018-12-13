@@ -1,35 +1,3 @@
-#importing libraries
-import pandas as pd
-import numpy as np
-import nltk
-from nltk.corpus import stopwords
-from nltk.stem.wordnet import WordNetLemmatizer
-import re
-from nltk import word_tokenize
-
-from imblearn.over_sampling import RandomOverSampler
-from collections import Counter
-import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
-from sklearn.model_selection import GridSearchCV
-
-from sklearn.metrics import *   
-
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.svm import SVC
-
-import seaborn as sns
-from sklearn.preprocessing import label_binarize
-from scipy import interp
-from itertools import cycle
-import pickle
-
-from time import time
-
-#%%
-from classification_code_class import Classification
-
 #%% Load the datasets
 
 train = pd.read_csv("data/train.csv")
